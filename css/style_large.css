@@ -1,0 +1,235 @@
+/*-----------------------------------------*/
+/*BASIC SETUP*/
+/*-----------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body{
+    font-family: 'Philosopher', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-rendering: optimizeLegibility;
+    color: azure;
+    }
+
+/*-----------------------------------------*/
+/*REUSABLE*/
+/*-----------------------------------------*/
+
+p,
+blockquote{
+    line-height: 1.6em;
+}
+
+h2{
+    font-size: 1.6vw;
+    font-weight: 200;
+}
+
+h3{
+    font-size: 1.3vw;
+  
+}
+
+.icon{
+    font-size: 30px;
+}
+
+/*-----------------------------------------*/
+/*HEADER*/
+/*-----------------------------------------*/
+.header-block,
+.doctor-block{
+    display: block;
+    background-color: #374548;
+    width: 100%;
+}
+.header-block{
+    height: 100vh;
+}
+
+.hero{
+    display: block;
+    background-image: url(img/Leistung-brustvergroesserung-villabella.png); 
+    height: 98%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    top: 15px;
+    bottom: 15px;
+}
+
+/*----menu----*/
+
+.menu{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    padding: 3%;
+    justify-items: right;
+}
+
+.logo{
+    display: block;
+    justify-self: left;
+}
+
+.logo img{
+    width: 30%;
+    height: auto;
+}
+
+.menu-nav{
+    width: 100%;
+}
+
+.main-nav{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: right;
+    align-items: flex-end;
+}
+
+.main-nav ul, .main-nav li{
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+}
+
+.main-nav li{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1vw;
+    justify-self: center;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: azure;  
+}
+
+.main-nav li a:hover {
+    text-decoration: none;
+    color: #d99e89;
+}
+
+/*-----hero-----*/
+
+.text-box{
+    display: grid;
+    grid-template-columns:  53% 15% 27%;
+    grid-template-rows:  1fr 1fr;
+    height: 83%;
+    color: azure;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.text-box-one{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.text-box-two{
+    display: block;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.text-box-two img{
+    width: 100%;
+}
+
+/*-----------------------------------------*/
+/*ABOUT DOCTOR*/
+/*-----------------------------------------*/
+
+.doctor-block{
+    height: auto;
+    padding: 16% 0;
+}
+
+.doctor{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 60% 30%; 
+    width: 100%;
+}
+
+.heading{
+    display: block;
+    grid-column: 2;
+    width: 100%;
+    height: 150px;
+    align-self: flex-start;
+}
+
+h2:after {
+    display: inline-block;
+    height: 2px;
+    background-color: azure;
+    content: " ";
+    width: 100%;
+}
+
+.main-img{
+    display: block;
+    margin-left: 16%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.main-img img{
+    width: auto;
+    height: 86%;
+}
+
+.main-text{
+    display: block;
+    grid-column: 2;
+    grid-row: 2;
+    color: azure;
+    padding: 8%;
+    align-self: center;
+}
+
+blockquote::before,
+blockquote::after{
+    display: block;
+    content: "\201C";
+    font-size: 400%;
+    font-family: Lato;
+}
+
+blockquote::after{
+    margin-top: 6%;
+    text-align: right;
+}
+
+.text-boxes{
+    display: grid;
+    width: 88%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 6%;
+}
+
+.text-box-second-section{
+    display: block;
+    font-size: 14px;
+    padding: 6%;
+}
+
+.text-box-second-section h3{
+    color: #d99e89;
+    margin-bottom: 3%;
+}
